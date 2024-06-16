@@ -1,0 +1,59 @@
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o logotipo */
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Contêiner pai com borda verde e layout flexível */
+.parent {
+    border: solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+/* Link do logotipo dentro do contêiner pai 
+flex: 1; nas regras CSS de .parent faz com que o link do logotipo
+ocupem o mesmo espaço flexível dentro do contêiner pai .*/
+
+.parent a {
+    flex: 1; /* Faz com que o link do logotipo ocupe espaço flexível */
+    display: flex; /* Para alinhar o logo centralmente */
+    align-items: center; /* Centraliza verticalmente o logo */
+}
+
+/* Estilo para imagens dentro de links na navegação */
+nav a img {
+    background-color: beige;
+    border: solid purple;
+}
+
+/* Estilo para o menu de navegação */
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    border: solid firebrick;
+}
+
+/* Estilo para os links de navegação */
+.navigation a {
+    text-decoration: none;
+    padding: 1em;
+    color: black;
+}
+
+/* Estilos específicos para telas pequenas */
+@media all and (max-width: 500px) {
+    .navigation {
+        /* Em telas pequenas, mudar a direção do flex para coluna */
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,57 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 1.2rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.header {
+	background: #1d1e20;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li {
+	margin-left: 10px;
+}
+
+.menu li a {
+	display: block;
+	padding: 10px;
+	background: tomato;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto; /* para alinhar ao centro quando passar dos 800px */
+}
+
+.flex > div {
+	flex: 1 1 200px; /*ele só funciona se estiver com a propriedade flex-wrap: wrap */
+    margin: 10px;
+}
